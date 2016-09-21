@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         dialPhNumber.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 EditText phNumber = (EditText) findViewById(R.id.phNumber);
-                Intent implicit = new Intent(Intent.ACTION_CALL,
+                Intent implicit = new Intent(Intent.ACTION_DIAL,
                         Uri.parse("tel:"+phNumber.getText().toString()));
                 startActivity(implicit);
             }
