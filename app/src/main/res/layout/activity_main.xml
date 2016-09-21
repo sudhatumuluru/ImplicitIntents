@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:padding="25dp"
+            android:src="@drawable/sjsulogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Implicit Intents"
+            android:layout_margin="25dp"
+            android:textColor="@color/offwhite"
+            android:textSize="25dp"
+            android:textColorHighlight="@color/offwhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL : "
+            android:paddingLeft="23dp"
+            android:textColor="@color/offwhite"
+            android:textSize="25dp"
+            android:textColorHighlight="@color/offwhite" />
+
+        <EditText
+            android:id="@+id/website"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:background="@color/offwhite"
+            android:hint="google.com"
+            android:ems="5">
+        </EditText>
+    </LinearLayout>
+    <Button
+        android:id="@+id/runWebsite"
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="Launch"
+        android:padding="10dp"
+        android:background="@color/myyellow"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone : "
+            android:textColor="@color/offwhite"
+            android:textSize="25dp"
+            android:textColorHighlight="@color/offwhite" />
+
+        <EditText
+            android:id="@+id/phNumber"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:background="@color/offwhite"
+            android:hint="(XXX)XXX-XXXX"
+            android:ems="5" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialPhNumber"
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="Ring"
+        android:background="@color/maroon"
+        android:padding="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:background="@color/palegreen" />
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:text="Close App "
+        android:layout_margin="60dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/black"
+        android:onClick="closeApp"
+        android:textColor="@color/offwhite"
+        android:layout_weight="0.11" />
+
+</LinearLayout>
